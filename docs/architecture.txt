@@ -1,0 +1,22 @@
+
+
+File 1
+	MetaData
+	|version: u8|indexes: u16|last_sequence: u32|date_offset: u64|
+
+	Key: (GDPR)
+	|key: u256|
+
+	Index (Pre-allocated storage of 100mb?)
+	|id: u128|key: u16|
+
+	Row  (Dynamic length, append at the end of the file)
+	|index_id: u32|sequence: u32|data_offset: u64|data_size: u16|created: u32|
+
+
+File 2
+	MetaData (1024b)
+	|version:u8|
+
+	Data (dynamic)
+	|data: byte[]|
