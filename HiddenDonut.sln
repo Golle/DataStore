@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiddenDonut", "src\HiddenDonut\HiddenDonut.csproj", "{B7407B04-5570-479B-B09F-44AC7C01E863}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{56135C99-A200-4A60-A524-EC7CEA13DAD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiddenDonutSample1", "src\HiddenDonutSample1\HiddenDonutSample1.csproj", "{140E549B-4E1F-4020-B6A7-713101FC18DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7407B04-5570-479B-B09F-44AC7C01E863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7407B04-5570-479B-B09F-44AC7C01E863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7407B04-5570-479B-B09F-44AC7C01E863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7407B04-5570-479B-B09F-44AC7C01E863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{140E549B-4E1F-4020-B6A7-713101FC18DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140E549B-4E1F-4020-B6A7-713101FC18DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140E549B-4E1F-4020-B6A7-713101FC18DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140E549B-4E1F-4020-B6A7-713101FC18DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{140E549B-4E1F-4020-B6A7-713101FC18DB} = {56135C99-A200-4A60-A524-EC7CEA13DAD5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACF8DCF1-ADB7-41D8-BE7C-796EA2E71E3D}
+	EndGlobalSection
+EndGlobal
