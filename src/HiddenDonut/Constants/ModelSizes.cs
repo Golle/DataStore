@@ -1,4 +1,4 @@
-﻿namespace HiddenDonut.Models
+﻿namespace HiddenDonut.Constants
 {
     public static class ModelSizes
     {
