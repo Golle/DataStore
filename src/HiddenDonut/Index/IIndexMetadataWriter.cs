@@ -1,11 +1,12 @@
-﻿using System.IO;
+﻿using System;
 using System.Threading.Tasks;
-using HiddenDonut.Models;
+using HiddenDonut.Index.Metadata;
 
 namespace HiddenDonut.Index
 {
-    internal interface IIndexMetadataWriter
+    internal interface IIndexMetadataWriter : IDisposable
     {
-        ValueTask Write(long offset, Stream stream, IndexMetadata metadata);
+        void Write(in IndexMetadataStruct metadata);
+        ValueTask WriteAsync(IndexMetadataStruct metadata);
     }
 }

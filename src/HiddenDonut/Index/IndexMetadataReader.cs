@@ -4,7 +4,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using HiddenDonut.Constants;
-using HiddenDonut.Models;
+using HiddenDonut.Index.Metadata;
 
 namespace HiddenDonut.Index
 {
@@ -12,7 +12,7 @@ namespace HiddenDonut.Index
     {
         private const int Size = ModelSizes.IndexMetaData;
         
-        public async ValueTask<IndexMetadata> Read(long offset, Stream stream)
+        public async ValueTask<IndexMetadataStruct> Read(long offset, Stream stream)
         {
             stream.Seek(offset, SeekOrigin.Begin);
             var buffer = ArrayPool<byte>.Shared.Rent(Size);
@@ -22,7 +22,7 @@ namespace HiddenDonut.Index
             {
                 fixed (byte* bufferPtr = buffer)
                 {
-                    return Marshal.PtrToStructure<IndexMetadata>((IntPtr)bufferPtr);
+                    return Marshal.PtrToStructure<IndexMetadataStruct>((IntPtr)bufferPtr);
                 }
             }
         }

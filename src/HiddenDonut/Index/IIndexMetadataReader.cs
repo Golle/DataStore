@@ -1,11 +1,11 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
-using HiddenDonut.Models;
+using HiddenDonut.Index.Metadata;
 
 namespace HiddenDonut.Index
 {
     internal interface IIndexMetadataReader
     {
-        ValueTask<IndexMetadata> Read(long offset, Stream stream);
+        ValueTask<IndexMetadataStruct> Read(long offset, Stream stream);
     }
 }

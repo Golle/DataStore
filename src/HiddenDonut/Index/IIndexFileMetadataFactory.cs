@@ -1,9 +1,9 @@
-﻿using HiddenDonut.Models;
+﻿using HiddenDonut.Index.Metadata;
 
 namespace HiddenDonut.Index
 {
     internal interface IIndexFileMetadataFactory
     {
-        IndexMetadata Create();
+        IndexMetadataStruct CreateDefault();
     }
 }

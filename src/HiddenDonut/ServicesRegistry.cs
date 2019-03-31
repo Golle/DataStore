@@ -1,5 +1,4 @@
 ﻿using HiddenDonut.Core.IOC;
-using HiddenDonut.Index;
 
 namespace HiddenDonut
 {

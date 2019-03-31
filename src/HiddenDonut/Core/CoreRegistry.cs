@@ -10,6 +10,7 @@ namespace HiddenDonut.Core
             container
                 .Register<IDateTime, DateTimeWrapper>()
                 .Register<IFileStreamFactory, FileStreamFactory>()
+                .Register<IFiles, Files>()
                 ;
         }
     }

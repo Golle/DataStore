@@ -2,16 +2,15 @@
 
 namespace HiddenDonut.Index
 {
-    class IndexRegistry : IRegistry
+    internal class IndexRegistry : IRegistry
     {
         public void Register(IContainer container)
         {
             container
-                .Register<IIndexFileInitializer, IndexFileInitializer>()
-                .Register<IIndexFileMetadataFactory, IndexFileMetadataFactory>()
                 .Register<IIndexFileManager, IndexFileManager>()
-                .Register<IIndexMetadataWriter, IndexMetadataWriter>()
-                .Register<IIndexMetadataReader, IndexMetadataReader>()
+                .Register<IIndexFileMetadataFactory, IndexFileMetadataFactory>()
+                .Register<IIndexFilePathFormatter, IndexFilePathFormatter>()
+                .Register<IIndexManager, IndexManager>()
                 ;
         }
     }

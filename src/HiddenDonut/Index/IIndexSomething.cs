@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 
 namespace HiddenDonut.Index
 {
-    internal interface IIndexFile : IDisposable
+    internal interface IIndexSomething
     {
-        ValueTask Commit();
+        ValueTask Append(Guid id, byte[] data);
     }
 }

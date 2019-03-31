@@ -1,6 +1,6 @@
 ﻿using HiddenDonut.Constants;
 using HiddenDonut.Core;
-using HiddenDonut.Models;
+using HiddenDonut.Index.Metadata;
 
 namespace HiddenDonut.Index
 {
@@ -13,14 +13,15 @@ namespace HiddenDonut.Index
             _dateTime = dateTime;
         }
 
-        public IndexMetadata Create()
+        public IndexMetadataStruct CreateDefault()
         {
-            return new IndexMetadata
+            return new IndexMetadataStruct
             {
                 Date = _dateTime.Now.Ticks,
                 Ids = 0,
                 Rows = 0,
-                Version = Versions.IndexMetadataVersion
+                Version = Versions.IndexMetadataVersion,
+                IndexSize = DefaultValues.MaxIndexSize
             };
         }
     }

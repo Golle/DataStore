@@ -30,7 +30,7 @@ namespace HiddenDonutSample1
             //    for (uint i = 0; i < 1_000_000; ++i)
             //    {
             //        metadata.Rows = i;
-            //        metaDataWriter.Write(in metadata);
+            //        metaDataWriter.WriteAsync(in metadata);
             //    }
             //    var count2 = GC.CollectionCount(0);
             //    stopwatch.Stop();
